@@ -18,6 +18,15 @@
   100% {content: '100%';}
 }
 
+@keyframes progressbar-3 {
+  0%   {width: 100%; background-position: 3px 0;}
+  20%  {width: 100%; background-position: 6px 0;}
+  40%  {width: 100%; background-position: 9px 0;}
+  60%  {width: 100%; background-position: 12px 0;}
+  80%  {width: 100%; background-position: 15px 0;}
+  100% {width: 100%; background-position: 18px 0;}
+}
+
 h1 {
   text-transform: uppercase;
   font-size: 24px;
@@ -86,7 +95,17 @@ a {
   animation: progressbar-1 4s linear infinite alternate;
 }
 
-.progressbar-item2 {
+.progressbar-item2::before {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 100%;
+  background-image: url("../img/progressbar-1.png");
+  animation: progressbar-3 .3s linear infinite;
+  animation-fill-mode: both;
+}
+
+.progressbar-item3 {
   position: relative;
   width: 100px;
   height: 100px;
@@ -94,7 +113,7 @@ a {
   background-color: #cdeb8b;
 }
 
-.progressbar-item2::before {
+.progressbar-item3::before {
   position: absolute;
   display: block;
   color: #ffffff;
