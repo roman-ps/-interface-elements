@@ -1,0 +1,101 @@
+@keyframes progressbar-1 {
+  0%   {background-color: #d2ff52; width: 0%;}
+  50%   {background-color: #42b539; width: 50%;}
+  100% {background-color: #b8c6df; width: 100%;}
+}
+
+@keyframes progressbar-2 {
+  0%   {content: '0%';}
+  10%  {content: '10%';}
+  20%  {content: '20%';}
+  30%  {content: '30%';}
+  40%  {content: '40%';}
+  50%  {content: '50%';}
+  60%  {content: '60%';}
+  70%  {content: '70%';}
+  80%  {content: '80%';}
+  90%  {content: '90%';}
+  100% {content: '100%';}
+}
+
+a {
+  color: #0000ff;
+}
+
+.header-menu {
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.header-item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-link--active {
+  color: #000000;
+}
+
+.progressbar {
+  width: 400px;
+  padding: 10px 0;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+}
+
+.progressbar-container {
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.progressbar-item {
+  position: relative;
+  width: 130px;
+  height: 30px;
+  margin: 10px auto 10px auto;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.progressbar-item:hover::before {
+  animation-play-state: paused;
+}
+
+.progressbar-item1::before {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 100%;
+  animation: progressbar-1 4s linear infinite alternate;
+}
+
+.progressbar-item2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #cdeb8b;
+}
+
+.progressbar-item2::before {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10px, -10px);
+  animation: progressbar-2 10s linear infinite;
+}
