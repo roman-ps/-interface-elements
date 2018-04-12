@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Слайдер CSS</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <ul class="header-menu">
+      <li class="header-item"><a class="header-link" href="index.html">Индикаторы</a></li>
+      <li class="header-item"><a class="header-link header-link--active" href="#">Слайдер</a></li>
+      <li class="header-item"><a class="header-link" href="menu.html">Меню</a></li>
+    </ul>
+  </header>
+  
+  <h1>Слайдер</h1>
+  <div class="main">
+      <a class="main-link main-link--active" href="#">Слайдер CSS</a>
+      <a class="main-link" href="sliderjs.html">Слайдер JS</a>
+    </div>
+      
+    <div class="sliders">
+      <input class="sliders-input" type="radio" id="btn1" name="toggle" checked> 
+      <input class="sliders-input" type="radio" id="btn2" name="toggle"> 
+      <input class="sliders-input" type="radio" id="btn3" name="toggle"> 
+      <div class="sliders-control">
+        <label class="sliders-label" for="btn1"></label>
+        <label class="sliders-label" for="btn2"></label>
+        <label class="sliders-label" for="btn3"></label>
+      </div>
+      <div class="slider-container">
+        <div class="slider slider--first">
+          <h3 class="slider-title">Первый слайд</h3>
+          <p class="slider-text">Бескрайние дали</p>
+        </div>
+
+        <div class="slider slider--second">
+          <h3 class="slider-title">Второй слайд</h3>
+          <p class="slider-text">Осень у дороги</p>
+        </div>
+
+        <div class="slider slider--third">
+          <h3 class="slider-title">Третий слайд</h3>
+          <p class="slider-text">Таинственный лес</p>
+        </div>
+      </div>
+    </div>
+  
+</body>
+</html>

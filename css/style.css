@@ -119,3 +119,138 @@ a {
   transform: translate(-10px, -10px);
   animation: progressbar-3 10s linear infinite;
 }
+
+/*
+a {
+  color: blue;
+}
+*/
+
+.main {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.main-link {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.main-link--active {
+  color: #000000;
+}
+
+.sliders {
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.sliders-input {
+  display: none; /* скрываем переключатели */
+}
+
+.sliders-control {
+  position: absolute;
+  top: 370px;
+  right: 50%;
+  transform: translateX(50%); /* центровка кнопок вне зависимости от их количества */
+}
+
+.sliders-label {
+  display: inline-block;
+  margin: 0 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 5px solid #ffffff; /* оформление активных кнопок */
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#btn1:checked ~.sliders-control .sliders-label:nth-child(1),
+#btn2:checked ~.sliders-control .sliders-label:nth-child(2),
+#btn3:checked ~.sliders-control .sliders-label:nth-child(3) {
+  background-color: #ff1a00;
+}
+
+.slider {
+  width: 800px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* оформляем все текстовые блоки снизу в центре для удобства */
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.slider--first {
+  background-image: url("../img/slider1.jpg");
+  color: #21b4e2;
+}
+
+.slider--second {
+  background-image: url("../img/slider2.jpg");
+  color: #e5e696;
+}
+
+.slider--third {
+  background-image: url("../img/slider3.jpg");
+  color: #ffffff;
+}
+
+.slider--first2 {
+  background-image: url("../img/slider4.jpg");
+  color: #21b4e2;
+}
+
+.slider--second2 {
+  background-image: url("../img/slider5.jpg");
+  color: #e5e696;
+}
+
+.slider--third2 {
+  background-image: url("../img/slider6.jpg");
+  color: #ffffff;
+}
+
+.slider-title {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.slider-text {
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+
+.slider {
+  display: none; /* скрываем по умолчанию все слайдеры */
+}
+
+#btn1:checked ~ .slider-container .slider--first,
+#btn2:checked ~ .slider-container .slider--second,
+#btn3:checked ~ .slider-container .slider--third {
+  display: flex;
+}
+
+/* Слайдер JS */
+
+.control {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #91e842 ;
+}
+
+.slider--first2 {
+  display: flex;
+}

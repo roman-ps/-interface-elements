@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Слайдер JS</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header class="header">
+    <ul class="header-menu">
+      <li class="header-item"><a class="header-link" href="index.html">Индикаторы</a></li>
+      <li class="header-item"><a class="header-link header-link--active" href="#">Слайдер</a></li>
+      <li class="header-item"><a class="header-link" href="menu.html">Меню</a></li>
+    </ul>
+  </header>
+    
+    <h1>Слайдер</h1>
+    <div class="main">
+      <a class="main-link" href="slider.html">Слайдер CSS</a>
+      <a class="main-link main-link--active" href="#">Слайдер JS</a>
+    </div>
+      
+    <div class="sliders">
+      <div class="sliders-control">
+        <div class="control" onclick="slider1()">1</div>
+        <div class="control" onclick="slider2()">2</div>
+        <div class="control" onclick="slider3()">3</div>
+      </div>
+      <div class="slider-container">
+        <div class="slider slider--first2">
+          <h3 class="slider-title">Первый слайд</h3>
+          <p class="slider-text">Красивый закат</p>
+        </div>
+
+        <div class="slider slider--second2">
+          <h3 class="slider-title">Второй слайд</h3>
+          <p class="slider-text">Тучи в поле</p>
+        </div>
+
+        <div class="slider slider--third2">
+          <h3 class="slider-title">Третий слайд</h3>
+          <p class="slider-text">Лесной восход</p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
