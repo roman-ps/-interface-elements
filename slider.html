@@ -17,36 +17,80 @@
   
   <h1>Слайдер</h1>
   <div class="main">
-      <a class="main-link main-link--active" href="#">Слайдер CSS</a>
-      <a class="main-link" href="sliderjs.html">Слайдер JS</a>
+      <div class="subtitle">Слайдер CSS</div>
     </div>
       
-    <div class="sliders">
-      <input class="sliders-input" type="radio" id="btn1" name="toggle" checked> 
-      <input class="sliders-input" type="radio" id="btn2" name="toggle"> 
-      <input class="sliders-input" type="radio" id="btn3" name="toggle"> 
-      <div class="sliders-control">
-        <label class="sliders-label" for="btn1"></label>
-        <label class="sliders-label" for="btn2"></label>
-        <label class="sliders-label" for="btn3"></label>
+  <div class="sliders">
+    <input class="sliders-input" type="radio" id="btn1" name="toggle" checked> 
+    <input class="sliders-input" type="radio" id="btn2" name="toggle"> 
+    <input class="sliders-input" type="radio" id="btn3" name="toggle"> 
+    <div class="sliders-control">
+      <label class="sliders-label" for="btn1"></label>
+      <label class="sliders-label" for="btn2"></label>
+      <label class="sliders-label" for="btn3"></label>
+    </div>
+    <div class="slider-container">
+      <div class="slider slider--first">
+        <h3 class="slider-title">Первый слайд</h3>
+        <p class="slider-text">Бескрайние дали</p>
       </div>
-      <div class="slider-container">
-        <div class="slider slider--first">
-          <h3 class="slider-title">Первый слайд</h3>
-          <p class="slider-text">Бескрайние дали</p>
-        </div>
 
-        <div class="slider slider--second">
-          <h3 class="slider-title">Второй слайд</h3>
-          <p class="slider-text">Осень у дороги</p>
-        </div>
+      <div class="slider slider--second">
+        <h3 class="slider-title">Второй слайд</h3>
+        <p class="slider-text">Осень у дороги</p>
+      </div>
 
-        <div class="slider slider--third">
-          <h3 class="slider-title">Третий слайд</h3>
-          <p class="slider-text">Таинственный лес</p>
-        </div>
+      <div class="slider slider--third">
+        <h3 class="slider-title">Третий слайд</h3>
+        <p class="slider-text">Таинственный лес</p>
       </div>
     </div>
+  </div>
+  
+  <div class="subtitle">Слайдер JS</div>
+  <div class="sliders sliders--js">
+    <div class="sliders-control">
+      <div class="control" onclick="slider1()">1</div>
+      <div class="control" onclick="slider2()">2</div>
+      <div class="control" onclick="slider3()">3</div>
+    </div>
+    <div class="slider-container">
+      <div class="slider slider2 slider--first2">
+        <h3 class="slider-title">Первый слайд</h3>
+        <p class="slider-text">Красивый закат</p>
+      </div>
+
+      <div class="slider slider2 slider--second2">
+        <h3 class="slider-title">Второй слайд</h3>
+        <p class="slider-text">Тучи в поле</p>
+      </div>
+
+      <div class="slider slider2 slider--third2">
+        <h3 class="slider-title">Третий слайд</h3>
+        <p class="slider-text">Лесной восход</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="subtitle">Слайдер JS карусель</div>
+  <div class="sliders sliders--karusel">
+    <div class="sliders-control">
+      <button class="btn btn--prev">Назад</button>
+      <button class="btn btn--next">Вперед</button>
+    </div>
+    <div class="slider-container slider-container--karusel">
+      <img class="slider-img slider-img__show" src="img/slider1.jpg">
+      <img class="slider-img" src="img/slider2.jpg">
+      <img class="slider-img" src="img/slider3.jpg">
+      <img class="slider-img" src="img/slider4.jpg">
+      <img class="slider-img" src="img/slider5.jpg">
+      <img class="slider-img" src="img/slider6.jpg">
+      <img class="slider-img" src="img/slider7.jpg">
+      <img class="slider-img" src="img/slider8.jpg">
+    </div>
+  </div>
+  
+  <script src="js/main.js"></script>
   
 </body>
 </html>

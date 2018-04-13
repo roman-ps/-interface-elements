@@ -120,28 +120,12 @@ a {
   animation: progressbar-3 10s linear infinite;
 }
 
-/*
-a {
-  color: blue;
-}
-*/
-
-.main {
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.main-link {
-  display: inline-block;
+.subtitle {
+  margin: 20px;
   padding: 0 20px;
+  font-size: 22px;
+  text-align: center;
   text-decoration: none;
-}
-
-.main-link--active {
-  color: #000000;
 }
 
 .sliders {
@@ -253,4 +237,18 @@ a {
 
 .slider--first2 {
   display: flex;
+}
+
+/* Карусель  */
+
+.slider-img {
+  display: none;
+}
+
+.slider-img__show {
+  display: block;
+}
+
+.slider-img__hide {
+  display: none;
 }
