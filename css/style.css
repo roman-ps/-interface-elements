@@ -252,3 +252,13 @@ a {
 .slider-img__hide {
   display: none;
 }
+
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+}
