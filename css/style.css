@@ -239,7 +239,7 @@ a {
   display: flex;
 }
 
-/* Карусель  */
+/* JS Карусель  */
 
 .slider-img {
   display: none;
@@ -247,10 +247,6 @@ a {
 
 .slider-img__show {
   display: block;
-}
-
-.slider-img__hide {
-  display: none;
 }
 
 .btn {
