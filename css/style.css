@@ -258,3 +258,64 @@ a {
   cursor: pointer;
   font-family: "Georgia", serif;
 }
+
+/* Меню */
+
+.main {
+  width: 910px;
+  margin: 0 auto;
+}
+
+.menu,
+.menu__submenu {
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu__submenu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.menu__submenu-show {
+  display: flex;
+}
+
+.menu__item {
+  vertical-align: top;
+}
+
+.menu__item-submenu {
+  outline: 1px solid #ffffff;
+}
+
+.menu__item,
+.menu__item-submenu {
+  position: relative;
+  display: inline-block;
+  background-color: skyblue;
+}
+
+.menu__item::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ffffff;
+  top: 13px;
+  right: 7px;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.menu__link,
+.menu__link-submenu {
+  width: 120px;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #000000;
+  text-decoration: none;
+}
