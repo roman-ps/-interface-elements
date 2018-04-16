@@ -5,3 +5,8 @@ cat1.addEventListener("mouseover", function(event) {
   event.preventDefault();
   submenu.classList.add("menu__submenu-show");
 })
+
+cat1.addEventListener("mouseout", function(event) {
+  event.preventDefault();
+  submenu.classList.remove("menu__submenu-show");
+})
