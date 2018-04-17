@@ -281,23 +281,24 @@ a {
 /* МЕНЮ */
 
 .menus {
-  width: 710px;
+  width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .menu,
-.menu__submenu {
+.submenu {
   padding-left: 0;
   list-style: none;
 }
 
-.menu__submenu {
+.submenu {
   display: flex;
   flex-direction: column;
   display: none;
 }
 
-.menu__submenu-show {
+.submenu--show {
   display: flex;
 }
 
@@ -305,15 +306,20 @@ a {
   vertical-align: top;
 }
 
-.menu__item-submenu {
+.submenu__item {
   outline: 1px solid #ffffff;
 }
 
 .menu__item,
-.menu__item-submenu {
+.submenu__item {
   position: relative;
   display: inline-block;
-  background-color: skyblue;
+  background-color: #a1dbff;
+}
+
+.menu__item:hover, 
+.submenu__item:hover {
+  background-color: #60abf8;
 }
 
 .menu__item::after {
@@ -330,8 +336,13 @@ a {
   transform: rotate(-45deg);
 }
 
+.menu__item:hover::after {
+  transform: rotate(135deg);
+  top: 17px;
+}
+
 .menu__link,
-.menu__link-submenu {
+.submenu__link {
   width: 120px;
   display: inline-block;
   padding: 10px 25px;
@@ -340,7 +351,6 @@ a {
   text-align: center;
 }
 
-.menu__item:hover::after {
-  transform: rotate(135deg);
-  top: 17px;
+.menu__item--disabled::after {
+  display: none;                 /* убираем стрелку когда нет подменю */
 }
