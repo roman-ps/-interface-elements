@@ -282,10 +282,6 @@ a {
   display: flex;
 }
 
-.menu__submenu-show2 {
-  display: block;
-}
-
 .menu__item {
   vertical-align: top;
 }
@@ -322,9 +318,4 @@ a {
   padding: 10px 25px;
   color: #000000;
   text-decoration: none;
-}
-
-.menu__item:hover::after {
-  transform: rotate(135deg);
-  top: 17px;
 }
