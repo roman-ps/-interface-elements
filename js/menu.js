@@ -1,7 +1,7 @@
 'use strict';
 
-var OpenSubmenu = document.querySelectorAll(".menu__item--submenu");
-var submenu = document.querySelectorAll(".submenu");
+var OpenSubmenu = document.querySelector(".menu__item--submenu");
+var submenu = document.querySelector(".submenu");
 
 OpenSubmenu.addEventListener("mouseover", function(event) {
   event.preventDefault();
