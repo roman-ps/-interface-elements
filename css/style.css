@@ -354,3 +354,47 @@ a {
 .menu__item--disabled::after {
   display: none;                 /* убираем стрелку когда нет подменю */
 }
+
+/* Карусель-2 */
+
+.slider-img2 {
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.sliders2 {
+  margin: 0 auto;
+  width: 510px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container--karusel2 {
+  display: flex;
+  transition: margin 2s;  /* плавный переход */ 
+}
+
+.btn2 {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn--prev2 {
+  left: 0;
+}
+
+.btn--next2 {
+  right: 0;
+}
+
+.karusel-margin1 {
+  margin-left: -510px;
+}
+
+.karusel-margin2 {
+  margin-left: -1020px;
+}

@@ -1,3 +1,5 @@
+'use strict';
+
 function hideSliders() {
   var images = document.querySelectorAll('.slider2');
   for (var i = 0; i < images.length; ++i) {
@@ -51,5 +53,33 @@ prev.addEventListener("click", function(event) {
   }
   else {
     img[i].classList.add("slider-img__show");
+  }
+})
+
+var karusel2 = document.querySelector(".slider-container--karusel2");
+var prev2 = document.querySelector(".btn--prev2");
+var next2 = document.querySelector(".btn--next2");
+
+next2.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (karusel2.classList.contains("karusel-margin1")) {
+    karusel2.classList.remove("karusel-margin1");
+    karusel2.classList.add("karusel-margin2");
+  } else if (karusel2.classList.contains("karusel-margin2")) {
+    karusel2.classList.remove("karusel-margin2");
+  } else {
+  karusel2.classList.add("karusel-margin1");
+  }
+})
+
+prev2.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (karusel2.classList.contains("karusel-margin1")) {
+    karusel2.classList.remove("karusel-margin1")
+  } else if (karusel2.classList.contains("karusel-margin2")) {
+    karusel2.classList.remove("karusel-margin2");
+    karusel2.classList.add("karusel-margin1");
+  } else {
+    karusel2.classList.add("karusel-margin2");
   }
 })
